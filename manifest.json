@@ -1,7 +1,7 @@
 {
     "name": "Algorithm visulizer",
     "short_name": "AV",
-    "background_color": "#7ED957",
+    "background_color": "#fff",
     "theme_color": "#7ED957",
     "orientation": "any",
     "description": "This is a project to visualize algorithms using HTML, CSS, JavaScript. The algorithm is the most important part of any program.An algorithm is a set of instructions for solving a problem or accomplishing a task.",
