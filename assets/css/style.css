@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+html, body { height: 100%; width: 100%; margin: 0; }
+:root{
+    --block-margin : 0.5px;
+    font-size: 0.9em;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif!important;
+}
+.main-body{
+    width : 100vw;
+    height : calc(100% - 100px);
+    box-sizing: border-box;
+    padding: 0px 0px 0px 1%;
+}
+.label{
+    margin-right: 20px;
+}
+
+/*                          end game                             */

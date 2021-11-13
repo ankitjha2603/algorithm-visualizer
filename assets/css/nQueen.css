@@ -1,0 +1,20 @@
+.nQueenBlock{
+    border: 1.5px solid black;
+    width: auto;
+    height: auto;
+    margin:0px;
+}
+.nQueenBlock:hover{
+    background-color: rgb(210, 210, 210);
+}
+.nQueenBoxTable{
+    width: 64vmin;
+    height: 64vmin;
+    border-collapse: separate;
+    border-spacing: 0 0;
+    margin: 15px auto 0px auto;
+}
+.queenPosition{
+    background-image: url(../img/chess-queen-svgrepo-com.svg);
+    background-size: cover;
+}

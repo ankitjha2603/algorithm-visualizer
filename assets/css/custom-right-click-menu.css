@@ -1,0 +1,67 @@
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*                  custom right click menu                      */
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+.custom-right-click-menu{
+    color: #808080;
+    border-radius: 3px;
+    display: block;
+    left: -1000px;
+    z-index: 5;
+    position: absolute;
+    width: 250px;
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    box-shadow:  5px 5px 10px #919191,
+    -5px -5px 10px #bebebe;
+}
+
+.hr hr{
+    width: 100%;
+    padding: 0px;
+}
+.menu-li{
+    list-style: none;
+    padding: 5px 10px;
+    margin : 3px 2px;
+}
+.hover-effect:hover{
+    background-color:rgb(230, 230, 230);
+}
+.link{
+    font-size: 20px;
+    text-decoration: none;
+    color: #4f4f4f;
+}
+.info{
+    font-weight: bold;
+    font-size: 12px;
+}
+.menu-li div{
+    display: flex;
+    font-family: 'Roboto', sans-serif!important;
+    font-weight: 600;
+}
+.icon{
+    margin: 0px 15px 0px 10px;
+    width: 28px;
+    height: 28px;
+    background-size: cover;
+}
+#linkdin-icon{
+    background-image: url(../img/icons8-linkedin.svg);
+}
+#github-icon{
+    background-image: url(../img/icons8-github.svg);
+}
+#instagram-icon{
+    background-image: url(../img/icons8-instagram.svg);
+}
+#hotstar-clone-icon{
+    background-image: url(../img/icons8-disney-now.svg);
+}
+#stackoverflow-icon{
+    background-image: url(../img/icons8-stack-overflow.svg);
+}
+

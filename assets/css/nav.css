@@ -1,0 +1,76 @@
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*                            nav bar                            */
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+.refresh{
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    margin-left: auto;
+    margin-right: 10px;
+    background: url(../img/icons8-refresh.svg);
+    background-size: cover;
+}
+.nav-bar{
+    display: flex;
+    height: 80px;
+    width: 100vw;
+    background-color:rgb(40, 3, 77);
+    align-items: center;
+    padding: 0px 1%;
+}
+.about{
+    display: flex;
+    height:100%;
+    width: fit-content;
+    align-items: center;
+}
+.speed,
+.length{
+    display:flex;
+    color: white;
+    font-size:medium;
+    font-weight: 400;
+    margin: 20px;
+    width: fit-content;
+    align-items: center;
+}
+#sorting-option{
+    display:none;
+    align-items: center;
+}
+#speed-range,
+#length{
+    width: 100px;
+    margin: 2px 5px;
+}
+
+#type-of-algorithm,
+.algorithm-name{
+    margin: 2px 4px;
+    padding: 5px;
+    font-size: 1em;
+    height: fit-content;
+    width: fit-content;
+    max-width: 50vw;
+    outline: none;
+    cursor: pointer;
+    background-color: #fff;
+}
+#start,
+.gSudoku{
+    text-align: center;
+    font-size: 1.1em;
+    margin: 10px;
+    padding: 10px 2px;
+    height: fit-content;
+    width: fit-content;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.gSudoku{
+    background-color: rgb(210, 210, 210);
+}
+.length-input,
+.speed-input-div{
+    display: flex;
+}

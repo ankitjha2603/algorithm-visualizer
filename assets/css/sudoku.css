@@ -1,0 +1,10 @@
+.sudoku-block{
+    width: 7.5vmin;
+    height: 7.5vmin;
+    font-size : 1.5em;
+    color: black;
+    text-align: center;
+}
+.main-table{
+    margin: 0px auto;
+}

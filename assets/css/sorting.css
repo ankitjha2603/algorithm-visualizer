@@ -1,0 +1,15 @@
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*                         main body                             */
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+.block{
+    width: 0.5%;
+    display: inline-block;
+    margin: var(--block-margin);
+    background-color: rgb(66, 134, 244, 0.8);
+}
+.block:hover{
+    background-color: greenyellow!important;
+    transition: background-color 0.15s;
+    
+}

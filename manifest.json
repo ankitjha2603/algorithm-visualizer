@@ -1,0 +1,96 @@
+{
+    "name": "Algorithm visulizer",
+    "short_name": "AV",
+    "background_color": "#7ED957",
+    "theme_color": "#7ED957",
+    "orientation": "any",
+    "description": "This is a project to visualize algorithms using HTML, CSS, JavaScript. The algorithm is the most important part of any program.An algorithm is a set of instructions for solving a problem or accomplishing a task.",
+    "start_url": "/algorithm-visualizer/",
+    "display": "fullscreen",
+    "lang": "English",
+    "categories": [
+        "Algorithm",
+        "Visualizer",
+        "Sorting Algorithm",
+        "Bubble sort",
+        "Insertion Sort",
+        "Selection Sort",
+        "Quick sort",
+        "Merge sort",
+        "Binary Search",
+        "Sudoku solver",
+        "nQueen problem"
+    ],
+    "screenshots": [
+        {
+            "src": "assets/img/s1.png",
+            "sizes": "1366x768",
+            "type": "image/png"
+        }
+    ],
+    "shortcuts": [
+        {
+            "name": "Algorithm visulizer",
+            "short_name": "AV",
+            "description": "A pationate programmer",
+            "url": "https://ankitjha2603.github.io/algorithm-visualizer",
+            "icons": [
+                {
+                    "src": "assets/img/favicon/apple-touch-icon.png",
+                    "sizes": "192x192"
+                }
+            ]
+        }
+    ],
+    "icons": [
+        {
+            "src": "assets/img/favicon/favicon-36x36.png",
+            "sizes": "36x36",
+            "type": "image\/png",
+            "density": "0.75"
+        },
+        {
+            "src": "assets/img/favicon/favicon-48x48.png",
+            "sizes": "48x48",
+            "type": "image\/png",
+            "density": "1.0"
+        },
+        {
+            "src": "assets/img/favicon/favicon-512x512.png",
+            "sizes": "512x512",
+            "type": "image\/png",
+            "density": "1.4"
+        },
+        {
+            "src": "assets/img/favicon/favicon-72x72.png",
+            "sizes": "72x72",
+            "type": "image\/png",
+            "density": "1.5"
+        },
+        {
+            "src": "assets/img/favicon/favicon-96x96.png",
+            "sizes": "96x96",
+            "type": "image\/png",
+            "density": "2.0"
+        },
+        {
+            "src": "assets/img/favicon/favicon-144x144.png",
+            "sizes": "144x144",
+            "type": "image\/png",
+            "density": "3.0"
+        },
+        {
+            "src": "assets/img/favicon/apple-touch-icon.png",
+            "sizes": "192x192",
+            "type": "image\/png",
+            "density": "4.0"
+        }
+    ],
+    "features": [
+        "Cross Platform",
+        "fast",
+        "simple"
+    ],
+    "related_applications": [],
+    "prefer_related_applications": false
+}
