@@ -3,7 +3,7 @@ const assets = [
   "/algorithm-visualizer/",
   "/algorithm-visualizer/index.html",
 
-  "/algorithm-visualizer/assets/music/move.mp3"
+  "/algorithm-visualizer/assets/music/move.mp3",
   
   "/algorithm-visualizer/assets/css/style.css",
   "/algorithm-visualizer/assets/css/custom-right-click-menu.css",
