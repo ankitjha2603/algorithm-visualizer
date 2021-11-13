@@ -18,7 +18,7 @@ function rightClick(e) {
         if (e.pageX + menuWidth > window.innerWidth) { menu.style.left = e.pageX - menuWidth + "px"; }
         else { menu.style.left = e.pageX + "px"; }
         if (e.pageY + menuHeight > window.innerHeight) { menu.style.top = e.pageY - menuHeight + "px"; }
-        else { alert(`${e.pageY}|${e.pageY + menuHeight}|${menuHeight}|${window.innerHeight}`);menu.style.top = e.pageY + "px"; }
+        else {menu.style.top = e.pageY + "px"; }
     }
 }
 
