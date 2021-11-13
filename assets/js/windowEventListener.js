@@ -38,7 +38,7 @@ window.addEventListener("keydown", (e) => {
             else if (sudokuFocus) {
                 let pre = sudokuSelect(...sudokuFocus).innerText
                 sudokuSelect(...sudokuFocus).innerText = key
-                if(sudokuCheck(sudokuTakeData(),...sudokuFocus, key, 150, 500, del = true)){
+                if(sudokuCheck(sudokuTakeData(),...sudokuFocus, key, 150, 500, true)){
                     InputkeyUnable = true
                     sudokuSelect(...sudokuFocus).style.textDecoration = "underline";
                     sudokuSelect(...sudokuFocus).style.fontStyle = "italic";
