@@ -9,11 +9,17 @@ function rightClick(e) {
     let menuWidth = getComputedStyle(select(".custom-right-click-menu")).width;
     menuWidth = menuWidth.slice(0, menuWidth.length - 2) * 1
     let menuHeight = getComputedStyle(select(".custom-right-click-menu")).height;
-    menuHeight = menuHeight.slice(0, menuHeight - 2) * 1
-    if (e.pageX + menuWidth > window.innerWidth) { menu.style.left = e.pageX - menuWidth + "px"; }
-    else { menu.style.left = e.pageX + "px"; }
-    if (e.pageY + 242 > window.innerHeight) { menu.style.top = e.pageY - 242 + "px"; }
-    else { menu.style.top = e.pageY + "px"; }
+    menuHeight = menuHeight.slice(0, menuHeight.length - 2) * 1
+    if (window.innerWidth < 2*menuWidth + 50 || window.innerHeight < 2*menuHeight + 50) {
+        return false
+    }
+    else {
+
+        if (e.pageX + menuWidth > window.innerWidth) { menu.style.left = e.pageX - menuWidth + "px"; }
+        else { menu.style.left = e.pageX + "px"; }
+        if (e.pageY + menuHeight > window.innerHeight) { menu.style.top = e.pageY - menuHeight + "px"; }
+        else { alert(`${e.pageY}|${e.pageY + menuHeight}|${menuHeight}|${window.innerHeight}`);menu.style.top = e.pageY + "px"; }
+    }
 }
 
 document.oncontextmenu = rightClick;
