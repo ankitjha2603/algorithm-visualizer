@@ -15,13 +15,13 @@ select("#start").addEventListener("click", () => {
     length = array.length;
     impButton()
     if (select("#type-of-algorithm").value === "0") {
-        if (select(".algorithm-name").value === "0") { bubbleSort(1001 - select("#speed-range").value) }
-        else if (select(".algorithm-name").value === "1") { insertionSort(1001 - select("#speed-range").value) }
-        else if (select(".algorithm-name").value === "2") { selectionSort(1001 - select("#speed-range").value) }
+        if (select(".algorithm-name").value === "0") { bubbleSort(1001 / select("#speed-range").value) }
+        else if (select(".algorithm-name").value === "1") { insertionSort(1001 / select("#speed-range").value) }
+        else if (select(".algorithm-name").value === "2") { selectionSort(1001 / select("#speed-range").value) }
         else if (select(".algorithm-name").value === "3") {
             iP = 0;
             let sortedArray = sampleSort()
-            quickSort((1001 - select("#speed-range").value) / 20 + 10, sortedArray)
+            quickSort((1001 / select("#speed-range").value) / 20 + 10, sortedArray)
         } else {
             iP = 0;
             let sortedArray = sampleSort()
@@ -48,14 +48,14 @@ select("#start").addEventListener("click", () => {
     } else {
         recursiveDelayConstant = 1
         if (select(".algorithm-name").value === "0") {
-            if (isSudokuSolvable()) { sudokuSolver(1 + (1001 - select("#speed-range").value) / 5) }
+            if (isSudokuSolvable()) { sudokuSolver(1 + (1001 / select("#speed-range").value) / 5) }
             else { alert("Unsolvable") }
         }
         else {
             queenPosition = [];
             isnQueenRunning = true;
             nQueenCreate(select("#length").value * 1);
-            nqueenSolve((1001 - select("#speed-range").value) / 3, select("#length").value * 1)
+            nqueenSolve((1001 / select("#speed-range").value) / 3, select("#length").value * 1)
         }
     }
 })
