@@ -1,7 +1,5 @@
 const staticCacheName = 'algorithm-visulizer-static-v1.1.0';
 const assets = [
-  "/algorithm-visualizer/serviceWorker.js",
-  
   "/algorithm-visualizer/",
   "/algorithm-visualizer/index.html",
 
