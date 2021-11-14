@@ -11,14 +11,14 @@ The algorithm is the most important part of any program.
   - Bubble sort ___(Time complexity = О(n<sup>2</sup>))___
   - Insertion Sort ___(Time complexity = О(n<sup>2</sup>))___
   - Selection Sort ___(Time complexity = О(n<sup>2</sup>))___
-  - Quick sort ___(Time complexity = О(n*log(n))___
-  - Merge sort ___(Time complexity = О(n*log(n))___
+  - Quick sort ___(Time complexity = О(log<sub>2</sub>n)___
+  - Merge sort ___(Time complexity = О(log<sub>2</sub>n)___
 
 - Binary Search
-  - Binary search on Sorted array
-  - Binary search in infinite sorted array (constant speed)
-  - Binary search in infinite sorted array (exponential speed)
-  - Binary search on rotated sorted Array
+  - Binary search on Sorted array ___(Time complexity = О(log<sub>2</sub>n)___
+  - Binary search in infinite sorted array (constant speed) ___(Time complexity = О(log<sub>2</sub>n)___
+  - Binary search in infinite sorted array (exponential speed) ___(Time complexity = О(log<sub>2</sub>n)___
+  - Binary search on rotated sorted Array ___(Time complexity = О(log<sub>2</sub>n)___
 
 - Backtraking
   - Sudoku solver ___(Time complexity = О(9<sup>n</sup>))___
