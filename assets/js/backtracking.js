@@ -25,7 +25,7 @@ function backtraking() {
 function sudokuEnv() {
     setup("", false, [1, 1000], true, "Solve Sudokus")
     if (select(".gSudoku")) { select(".gSudoku").remove() }
-    let gS = newElement("gSudoku", "Generate Random List")
+    let gS = newElement("gSudoku", "Generate Random Sudoku")
     gS.style.borderRadius = "5"
     gS.style.border = "none"
     append(select("#option"), gS)
