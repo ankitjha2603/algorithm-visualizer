@@ -9,7 +9,7 @@ function impButton(disable = true) {
 
 }
 function sorting() {
-    setup("Length of list", [10, 200], [200, 1000], false, "Sort the array", 50)
+    setup("Length of list", [10, 200], [1, 1000], false, "Sort the array", 50)
     generateModel(select("#length").value * 1)
     sampleSort(true)
     select("#length").disabled = false
