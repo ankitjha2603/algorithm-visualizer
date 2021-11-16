@@ -10,7 +10,7 @@ function rightClick(e) {
     menuWidth = menuWidth.slice(0, menuWidth.length - 2) * 1
     let menuHeight = getComputedStyle(select(".custom-right-click-menu")).height;
     menuHeight = menuHeight.slice(0, menuHeight.length - 2) * 1
-    if (window.innerWidth < 2*menuWidth + 50 || window.innerHeight < 2*menuHeight + 50) {
+    if (window.innerWidth < menuWidth + 100 || window.innerHeight < menuHeight + 100) {
         return false
     }
     else {
