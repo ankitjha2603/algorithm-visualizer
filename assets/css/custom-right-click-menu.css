@@ -8,29 +8,29 @@
     left: -1000px;
     z-index: 5;
     position: absolute;
-    width: 250px;
+    width: 230px;
     background-color: white;
     border-style: solid;
     border-width: 1px;
     border-color: white;
     box-shadow:  5px 5px 10px #919191,
     -5px -5px 10px #bebebe;
+    padding: 5px 0px;
 }
-
 .hr hr{
     width: 100%;
     padding: 0px;
 }
 .menu-li{
     list-style: none;
-    padding: 5px 10px;
-    margin : 3px 2px;
+    padding: 2px 10px;
+    margin : 1.5px 2px;
 }
 .hover-effect:hover{
     background-color:rgb(230, 230, 230);
 }
 .link{
-    font-size: 20px;
+    font-size: 15px;
     text-decoration: none;
     color: #4f4f4f;
 }
@@ -45,9 +45,12 @@
 }
 .icon{
     margin: 0px 15px 0px 10px;
-    width: 28px;
-    height: 28px;
+    width: 25px;
+    height: 25px;
     background-size: cover;
+}
+#portfolio-icon{
+    background-image: url(../img/portfolio.svg)
 }
 #linkdin-icon{
     background-image: url(../img/icons8-linkedin.svg);
@@ -64,4 +67,3 @@
 #stackoverflow-icon{
     background-image: url(../img/icons8-stack-overflow.svg);
 }
-
