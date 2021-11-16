@@ -21,6 +21,8 @@ const assets = [
   "/algorithm-visualizer/assets/js/windowEventListener.js",
 
   "/algorithm-visualizer/assets/img/chess-queen-svgrepo-com.svg",
+  "/algorithm-visualizer/assets/img/portfolio.svg",
+  "/algorithm-visualizer/assets/img/snake-game.svg",
   "/algorithm-visualizer/assets/img/icons8-disney-now.svg",
   "/algorithm-visualizer/assets/img/icons8-github.svg",
   "/algorithm-visualizer/assets/img/icons8-instagram.svg",
