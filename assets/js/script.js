@@ -21,11 +21,11 @@ select("#start").addEventListener("click", () => {
         else if (select(".algorithm-name").value === "3") {
             iP = 0;
             let sortedArray = sampleSort()
-            quickSort((1001 / select("#speed-range").value) / 20 + 5, sortedArray)
+            quickSort((6001 / select("#speed-range").value) + 5, sortedArray)
         } else {
             iP = 0;
             let sortedArray = sampleSort()
-            mergeSort((1001 - select("#speed-range").value) / 5 + 5, sortedArray)
+            mergeSort((5001 / select("#speed-range").value) + 5, sortedArray)
         }
     } else if (select("#type-of-algorithm").value === "1") {
         do {
