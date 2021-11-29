@@ -15,9 +15,9 @@ select("#start").addEventListener("click", () => {
     length = array.length;
     impButton()
     if (select("#type-of-algorithm").value === "0") {
-        if (select(".algorithm-name").value === "0") { bubbleSort(1001 / select("#speed-range").value) }
-        else if (select(".algorithm-name").value === "1") { insertionSort(1001 / select("#speed-range").value) }
-        else if (select(".algorithm-name").value === "2") { selectionSort(1001 / select("#speed-range").value) }
+        if (select(".algorithm-name").value === "0") { bubbleSort((1001 / select("#speed-range").value)/ 5 + 1) }
+        else if (select(".algorithm-name").value === "1") { insertionSort((1001 / select("#speed-range").value)/ 5 + 1) }
+        else if (select(".algorithm-name").value === "2") { selectionSort((1001 / select("#speed-range").value)/ 5 + 1) }
         else if (select(".algorithm-name").value === "3") {
             iP = 0;
             let sortedArray = sampleSort()
