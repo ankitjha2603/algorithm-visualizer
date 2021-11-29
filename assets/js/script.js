@@ -15,17 +15,17 @@ select("#start").addEventListener("click", () => {
     length = array.length;
     impButton()
     if (select("#type-of-algorithm").value === "0") {
-        if (select(".algorithm-name").value === "0") { bubbleSort((1001 / select("#speed-range").value/ 5 + 1)) }
-        else if (select(".algorithm-name").value === "1") { insertionSort((1001 / select("#speed-range").value/ 5 + 1)) }
-        else if (select(".algorithm-name").value === "2") { selectionSort((1001 / select("#speed-range").value/ 5 + 1)) }
+        if (select(".algorithm-name").value === "0") { bubbleSort((5001 / select("#speed-range").value + 3)) }
+        else if (select(".algorithm-name").value === "1") { insertionSort((5001 / select("#speed-range").value + 3)) }
+        else if (select(".algorithm-name").value === "2") { selectionSort((5001 / select("#speed-range").value + 3)) }
         else if (select(".algorithm-name").value === "3") {
             iP = 0;
             let sortedArray = sampleSort()
-            quickSort((1001 / select("#speed-range").value) / 20 + 1, sortedArray)
+            quickSort((1001 / select("#speed-range").value) / 20 + 5, sortedArray)
         } else {
             iP = 0;
             let sortedArray = sampleSort()
-            mergeSort((1001 - select("#speed-range").value) / 5 + 1, sortedArray)
+            mergeSort((1001 - select("#speed-range").value) / 5 + 5, sortedArray)
         }
     } else if (select("#type-of-algorithm").value === "1") {
         do {
