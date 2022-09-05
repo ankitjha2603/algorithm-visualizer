@@ -1,34 +1,25 @@
-const staticCacheName = 'algorithm-visulizer-static-v1.1.0';
+const staticCacheName = 'ankit-kumar-Jha-static-v2.1.0';
 const assets = [
-  "/algorithm-visualizer/",
-  "/algorithm-visualizer/index.html",
+"/",
+"/index.html",
 
-  "/algorithm-visualizer/assets/music/move.mp3",
-  
-  "/algorithm-visualizer/assets/css/style.css",
-  "/algorithm-visualizer/assets/css/custom-right-click-menu.css",
-  "/algorithm-visualizer/assets/css/nav.css",
-  "/algorithm-visualizer/assets/css/sorting.css",
-  "/algorithm-visualizer/assets/css/sudoku.css",
-  "/algorithm-visualizer/assets/css/responsive.css",
-  "/algorithm-visualizer/assets/css/nQueen.css",
+"/assets/js/main.js",
 
-  "/algorithm-visualizer/assets/js/function.js",
-  "/algorithm-visualizer/assets/js/sorting.js",
-  "/algorithm-visualizer/assets/js/binarySearch.js",
-  "/algorithm-visualizer/assets/js/backtracking.js",
-  "/algorithm-visualizer/assets/js/script.js",
-  "/algorithm-visualizer/assets/js/windowEventListener.js",
+"assets/img/hero-banner.png",
+"assets/img/portfolio.svg",
+"assets/img/profile-pic.jpg",
+"assets/img/projects/advance-web-scraper-amazon.png",
+"assets/img/projects/algorithm-visualizer.png",
+"assets/img/projects/hotstar-clone.png",
+"assets/img/projects/snake-game.png",
 
-  "/algorithm-visualizer/assets/img/chess-queen-svgrepo-com.svg",
-  "/algorithm-visualizer/assets/img/portfolio.svg",
-  "/algorithm-visualizer/assets/img/snake-game.svg",
-  "/algorithm-visualizer/assets/img/icons8-disney-now.svg",
-  "/algorithm-visualizer/assets/img/icons8-github.svg",
-  "/algorithm-visualizer/assets/img/icons8-instagram.svg",
-  "/algorithm-visualizer/assets/img/icons8-linkedin.svg",
-  "/algorithm-visualizer/assets/img/icons8-refresh.svg",
-  "/algorithm-visualizer/assets/img/icons8-stack-overflow.svg",
+"/assets/css/style.css",
+"/assets/vendor/aos/aos.css",
+"/assets/vendor/bootstrap/css/bootstrap.min.css",
+"/assets/vendor/bootstrap-icons/bootstrap-icons.css",
+"/assets/vendor/boxicons/css/boxicons.min.css",
+"/assets/vendor/glightbox/css/glightbox.min.css",
+"/assets/vendor/aos/aos.js"
 ];
 
 // install event
@@ -37,11 +28,11 @@ self.addEventListener('install', evt => {
     caches.open(staticCacheName).then((cache) => {
       console.log('caching shell assets');
       return cache.addAll(assets)
-        .catch(err => {
-          console.error('Error adding files to cache', err);
-        })
+      .catch(err =>{
+        console.error('Error adding files to cache',err);
+      })
     })
-  )
+    )
   console.info('SW installed');
   self.skipWaiting();
 });
@@ -53,9 +44,9 @@ self.addEventListener('activate', evt => {
       return Promise.all(keys
         .filter(key => key !== staticCacheName)
         .map(key => caches.delete(key))
-      );
+        );
     })
-  );
+    );
   return self.clients.claim();
 });
 
@@ -65,5 +56,5 @@ self.addEventListener('fetch', evt => {
     caches.match(evt.request).then(cacheRes => {
       return cacheRes || fetch(evt.request);
     })
-  );
+    );
 });
